@@ -1,0 +1,96 @@
+body {
+    background-color: beige;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav.menu h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+nav.menu .links {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #007bff;
+}
+
+.espaciador {
+    height: 120px; /* espacio para que el nav no tape contenido */
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid gray;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    max-width: 900px;
+    background-color:beige;
+}
+
+.contenedor-datos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.datos-personales img {
+    width: 140px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    order: 2;
+}
+
+.info-datos {
+    flex: 1 1 300px;
+    min-width: 250px;
+    order: 1;
+}
+
+.datos-personales table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.datos-personales td {
+    padding: 5px 10px;
+    vertical-align: top;
+}
+p{
+    text-align: center;
+    
+}
+
