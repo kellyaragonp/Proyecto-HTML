@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Formulario HTML</h1>
+    <br>
     <section>
         <form action="#" method="get">
             <div>
@@ -28,7 +29,7 @@
             </div>
              <div>
                 <label for="">Pasa tiempo</label>
-                <textarea name="" id="" rows="5"></textarea>><br><br>
+                <textarea name="" id="" rows="5"></textarea><br><br>
                 <label for="">Municipios</label>
                 <select name="" id="">
                     <option value="1">Valledupar</option>
@@ -38,20 +39,19 @@
             </div>
             <div>
                 <label for="">Cursos Disponibles</label>
-                <br>
-                <input type="radio" name="curso" id="ia">
-                <label for="ia">Inteligencia Artificial</label>
-                <br>
-                <input type="radio" name="curso" id="pg">
-                <label for="pg">Programción</label>
-                <br>
-                 <input type="radio" name="curso" id="ad">
-                <label for="ad">Analisis de Datos</label>  
+                <div class="Radio-select">
+                    <label class="radio-option">
+                        <input type="radio" name="curso" id="ia"> Inteligencia Artificial</label>
+                    <label class="radio-option">
+                        <input type="radio" name="curso" id="pg"> Programación</label>
+                    <label class="radio-option">
+                        <input type="radio" name="curso" id="ad"> Análisis de Datos</label>
+                </div>
             </div>
-             <label for="">Button</label>
+            <br>
             <input type="submit" value="Save">
             <input type="reset" value="Cancel">
-            <button>Button</button>
+            
         </form>
     </section>
 </body>
