@@ -7,31 +7,73 @@
 }
 body{
     background-color: beige;
+     min-height: 100vh;
+}
+.Panel{
     display: grid;
     gap: 10px;
-    grid-template-areas: 
-    "Encabezado" 
-    "Menu" 
-    "contenido" 
-    "Lateral" 
-    "Pie" 
-}
+   
+    grid-template: 
+    "Encabezado" 50px
+    "Menu" 20px
+    "contenido" auto 
+    "Lateral" 100px
+    "Pie"20px;
+
 @media(min-width:900px){
     grid-template:
-    "Encabezado  Encabezado  Encabezado" 100px
-    "Menu        Menu        Menu" 50px
-    "contenido   contenido   contenido" 10%
+    "Encabezado Encabezado Encabezado" 100px
+    "Menu Menu Menu" 50px
+    "contenido contenido Lateral" auto 
     "Pie         Pie         Pie"  50px /50px auto auto;
+    background-color:gray;
 }
-
+}
 .Encabezado{
     background-color: #f4f4f4;
     grid-area: Encabezado;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Encabezado h1{
+    font-size: 3rem;
+    font-style: italic;
+    font-family:cursive;
+    text-transform:capitalize;
+    text-shadow: 1px 3px 2px gray;
 }
 .Menu{
     background-color: blanchedalmond;
     grid-area: Menu;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+.links{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.links li{
+    margin: 0 60px;
+}
+.links li a{
+    text-decoration: none;
+    color: rgb(65, 62, 62);
+    font-weight: bold;
+    transform: color 0.5s ease;
+    }
+.links li a:hover{
+    color: rgb(100, 138, 196);
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgb(60, 125, 223);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .Contenido{
     background-color:rgb(184, 135, 77);
     grid-area: contenido;
