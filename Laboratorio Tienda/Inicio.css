@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: beige;
+     min-height: 100vh;
+}
+.Panel{
+    display: grid;
+    gap: 10px;
+   
+    grid-template: 
+    "Encabezado" 50px
+    "Menu" 20px
+    "contenido" auto 
+    "Lateral" 100px
+    "Pie"20px;
+
+@media(min-width:900px){
+    grid-template:
+    "Encabezado Encabezado Encabezado" 100px
+    "Menu Menu Menu" 50px
+    "contenido contenido Lateral" auto 
+    "Pie         Pie         Pie"  50px /50px auto auto;
+    background-color:gray;
+}
+}
+.Encabezado{
+    background-color: #f4f4f4;
+    grid-area: Encabezado;
+}
+.Menu{
+    background-color: blanchedalmond;
+    grid-area: Menu;
+}
+.Contenido{
+    background-color:rgb(184, 135, 77);
+    grid-area: contenido;
+}
+.Lateral{
+    background-color: rgb(95, 95, 65);
+    grid-area: Lateral;
+}
+.Pie{
+    background-color: rgb(114, 97, 74);
+    grid-area: Pie;
+}
