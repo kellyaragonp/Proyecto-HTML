@@ -1,0 +1,60 @@
+body{
+    background-color: beige;
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h1{
+    max-width: 500px;
+    margin: 20px auto 10px auto;
+    text-align: left;
+
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+input:not([type="radio"]), select{
+    width: 500px;
+    padding: 10px 0 10px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+}
+input[type="submit"]:hover{
+background-color: green;
+}
+
+input[type="reset"]:hover{
+background-color: brown;
+}
+section{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+textarea{
+    width: 500px;
+}
+.radio-select{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.radio-select label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    gap: 10px;
+}
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal;
+    font-size: 14px;
+}
