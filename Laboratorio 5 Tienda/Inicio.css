@@ -191,13 +191,13 @@ body{
     background-color: rgb(180, 158, 125);
     grid-area: Lateral;
     border-radius: 15px;
-    margin-right: 10px;
+    margin-right: 0;
     margin-top: 100px;
 }
 aside {
   background-color: #f9f9f9;
   border-left: 2px solid #ccc;
-  width: 300px;
+  width: 95%;
   font-family: 'Georgia', serif;
 }
 

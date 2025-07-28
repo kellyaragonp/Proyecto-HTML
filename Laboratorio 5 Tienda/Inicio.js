@@ -36,7 +36,19 @@ iniciarScroll('curiosidades-box');
       imagen: "libro4.jpg"
     }
     ];
-    setInterval(() => {
-    cambiarLibro(1);
-  }, 5000);
+    let indiceActual = 0;
 
+function cambiarLibro(direccion) {
+  indiceActual += direccion;
+  if (indiceActual < 0) indiceActual = libros.length - 1;
+  if (indiceActual >= libros.length) indiceActual = 0;
+
+  const libro = libros[indiceActual];
+  document.getElementById("portadaLibro").src = libro.imagen;
+  document.getElementById("tituloLibro").textContent = libro.titulo;
+}
+
+// Auto cambio cada 5 segundos
+setInterval(() => {
+  cambiarLibro(1);
+}, 5000);
