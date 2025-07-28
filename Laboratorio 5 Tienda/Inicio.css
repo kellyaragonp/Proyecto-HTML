@@ -10,6 +10,7 @@ body{
      min-height: 100vh;
 }
 .Panel{
+    min-height: 100vh;
     display: grid;
     gap: 10px;
    
@@ -17,28 +18,26 @@ body{
     "Encabezado" auto
     "Menu" 20px
     "contenido" auto 
-    "Lateral" 100px
-    "Pie"20px;
+    "Lateral" auto
+    "Pie"auto;
 }
 
-/* CIERRA .Panel ↑ y ahora empieza @media */
 @media (min-width: 900px) {
   .Panel {
     grid-template:
     "Encabezado Encabezado Encabezado" auto
     "Menu Menu Menu" 50px
     "contenido contenido Lateral" auto
-    "Pie         Pie         Pie"  50px /2fr 4fr 2fr;
+    "Pie         Pie         Pie"  auto /2fr 4fr 2fr;
 }
 }
 .Encabezado {
   grid-area: Encabezado;
   position: relative;
   height: 150px;
-  z-index: 1; /* Asegura que el encabezado esté detrás de la imagen de fondo */
+  z-index: 1; 
 }
 
-/* Capa con la imagen de fondo + filtro */
 .fondo-header {
   position: absolute;
   top: 0;
@@ -48,11 +47,9 @@ body{
   background-image: url("imagenes/pexels-rickyrecap-1907785.jpg");
   background-size: cover;
   background-position: center;
-  filter: brightness(60%) blur(1px); /* Opacidad + difuminado */
+  filter: brightness(60%) blur(1px); 
   z-index: 1;
 }
-
-/* Contenido encima */
 .contenido-header {
   position: relative;
   z-index: 2;
@@ -121,16 +118,20 @@ body{
     border-radius: 15px;
     margin-left: 10px;
 }
+.oferta h1{
+    text-align: center;
+    font-size:40px;
+    font-weight: bold;
+    color: rgb(63, 49, 29);
+}
 .Lateral{
     background-color: rgb(180, 158, 125);
     grid-area: Lateral;
     border-radius: 15px;
     margin-right: 10px;
 }
-.Pie{
-    background-color: rgb(114, 97, 74);
-    grid-area: Pie;
-}
+
+
 
 /tarjetas/
 
@@ -188,7 +189,6 @@ body{
 
 aside {
   background-color: #f9f9f9;
-  padding: 20px;
   border-left: 2px solid #ccc;
   width: 300px;
   font-family: 'Georgia', serif;
@@ -232,6 +232,40 @@ aside h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.pie {
+  grid-area: Pie;
+  background-color: rgb(114, 97, 74); 
+  color: #fff5e1; 
+  font-family: Georgia, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.pie p {
+  margin: 4px 0;
+}
+
+.pie a {
+  color: #f1d9b0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.pie a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+html, body {
+  height: 100%;
 }
 
 
