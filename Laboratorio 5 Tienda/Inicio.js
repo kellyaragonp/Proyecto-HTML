@@ -11,29 +11,28 @@ function iniciarScroll(containerId) {
       current = 0;
     }
     content.style.transform = `translateY(-${current * 80}px)`;
-  }, 3000); // cada 3 segundos cambia
+  }, 3000); 
 }
 
-// Llama la función para cada bloque que tenga auto-scroll
 iniciarScroll('trivia-box');
 iniciarScroll('curiosidades-box');
 
  const libros = [
     {
-      titulo: "La Sombra del Viento - Carlos Ruiz Zafón",
-      imagen: "libro1.jpg"
+      titulo: "Verity - Colleen Hoover",
+      imagen: "imagenes/verity.jpg"
     },
     {
       titulo: "Orgullo y Prejuicio - Jane Austen",
-      imagen: "libro2.jpg"
+      imagen: "imagenes/orgullo.jpg"
     },
     {
-      titulo: "Cien Años de Soledad - Gabriel García Márquez",
-      imagen: "libro3.jpg"
+      titulo: "Un Amor Agridulce- Agustina Buera",
+      imagen: "imagenes/agridulce.jpg"
     },
     {
-      titulo: "El Principito - Antoine de Saint-Exupéry",
-      imagen: "libro4.jpg"
+      titulo: "El Año de Gracia  - Kim Liggett",
+      imagen: "imagenes/gracia.jpg"
     }
     ];
     let indiceActual = 0;
@@ -48,7 +47,6 @@ function cambiarLibro(direccion) {
   document.getElementById("tituloLibro").textContent = libro.titulo;
 }
 
-// Auto cambio cada 5 segundos
 setInterval(() => {
   cambiarLibro(1);
 }, 5000);
