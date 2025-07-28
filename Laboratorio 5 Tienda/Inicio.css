@@ -127,6 +127,7 @@ body{
     border-radius: 15px;
     margin-left: 10px;
     margin-top: 100px;
+   
 }
 .oferta h1{
     text-align: center;
@@ -134,18 +135,7 @@ body{
     font-weight: bold;
     color: rgb(63, 49, 29);
 }
-.Lateral{
-    background-color: rgb(180, 158, 125);
-    grid-area: Lateral;
-    border-radius: 15px;
-    margin-right: 10px;
-    margin-top: 100px;
-}
-
-
-
-/tarjetas/
-
+/*tarjetas*/
 .oferta{
     margin: 20px;
 }
@@ -197,7 +187,13 @@ body{
     display: inline-block;
 }
 /*diseño laterales*/
-
+.Lateral{
+    background-color: rgb(180, 158, 125);
+    grid-area: Lateral;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-top: 100px;
+}
 aside {
   background-color: #f9f9f9;
   border-left: 2px solid #ccc;
@@ -278,5 +274,147 @@ aside h3 {
 html, body {
   height: 100%;
 }
+/*Inicio*/
+.hero-recomendados {
+  background: linear-gradient(rgba(0, 0, 0, 0.368), rgba(0, 0, 0, 0.374)), url('imagenes/fondo\ hero.jpg') center/cover no-repeat;
+  color: rgb(240, 228, 184);
+  padding: 60px 20px;
+  text-align: center;
+    height: 500px;
+  border-radius: 15px;
+  
+}
 
+.hero {
+  margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.hero button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: rgb(63, 49, 29);
+  color: rgb(240, 228, 184);;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.recomendados {
+  max-width: 450px;
+  margin: 10px auto;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.slider img {
+  width: 130px;
+  height: 180px;
+  object-fit: cover;
+  border: 4px solid white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+}
+
+.nav {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 12px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.nav.left {
+  left: -40px;
+}
+
+.nav.right {
+  right: -40px;
+}
+
+#tituloLibro {
+  font-size: 1.2rem;
+  margin-top: 25px;
+}
+
+.nosotros-visual {
+  background: linear-gradient(rgba(0, 0, 0, 0.348), rgba(0, 0, 0, 0.562)), url('imagenes/expreso-textura-leer-cafe-madera.jpg') center/cover no-repeat;
+  background-size: cover;
+  background-position:top;
+  padding: 60px 20px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.contenedor-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.imagen-nosotros img {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.imagen-nosotros img:hover {
+  transform: scale(1.03);
+}
+
+.texto-nosotros {
+  max-width: 600px;
+  color: #42210b;
+}
+
+.texto-nosotros h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: rgb(163, 123, 83);
+}
+
+.texto-nosotros p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: rgb(240, 228, 184);;
+}
+
+.beneficios {
+  padding: 40px;
+  text-align: center;
+}
+.beneficios ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+.beneficios li {
+  margin: 10px 0;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+section{
+    scroll-margin-top: 100px;
+}
 

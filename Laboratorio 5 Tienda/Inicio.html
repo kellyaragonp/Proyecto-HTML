@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Tienda</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="Inicio.css">
 </head>
 <body class="Panel">
     <header class="Encabezado">
-  <div class="fondo-header"></div> <!-- Imagen de fondo y efecto -->
+  <div class="fondo-header"></div>
   <div class="contenido-header">
     <img src="imagenes/logo-sin-fondo.png" alt="Logo" class="logo"> <!-- logo si quieres -->
     <h1></h1>
@@ -16,73 +16,54 @@
 </header>
     <nav class="Menu">
         <ul class="links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Libros</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Nosotros</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="Libros.html">Libros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
         </ul>
     </nav>
 
     <main class="Contenido">
-        <section>
-            
-        </section>
-         <section class="oferta">
-            <br>
-        <h1>Libros</h1>
-        <br>
-        <br>
-        <div class="cont-tarjetas">
-            <div class="tarjetas">
-                <img src="imagenes/rem.webp" alt="Romper el Circulo">
-                <label for="">Romper el Circulo - Colleen hoover</label>
-                <h2>$ 69.000</h2>
-                <button>COMPRAR</button>
-            </div>
-            <div class="tarjetas">
-                <img src="imagenes/romper-el-circulo-.webp" alt="Romper el Circulo">
-                <label for="">Libro Romper el Circulo - Colleen hoover</label>
-                <h2>$ 69.000</h2>
-                <button>COMPRAR</button>
-            </div>
-            <div class="tarjetas">
-                <img src="imagenes/romper-el-circulo-.webp" alt="Romper el Circulo">
-                <label for="">Libro Romper el Circulo - Colleen hoover</label>
-                <h2>$ 69.000</h2>
-                <button>COMPRAR</button>
-            </div>
-            <div class="tarjetas">
-                <img src="imagenes/romper-el-circulo-.webp" alt="Romper el Circulo">
-                <label for="">Libro Romper el Circulo - Colleen hoover</label>
-                <h2>$ 69.000</h2>
-                <button>COMPRAR</button>
-            </div>
-            <div class="tarjetas">
-                <img src="imagenes/romper-el-circulo-.webp" alt="Romper el Circulo">
-                <label for="">Libro Romper el Circulo - Colleen hoover</label>
-                <h2>$ 69.000</h2>
-                <button>COMPRAR</button>
-            </div>
-            <div class="tarjetas">
-                <img src="imagenes/romper-el-circulo-.webp" alt="Romper el Circulo">
-                <label for="">Libro Romper el Circulo - Colleen hoover</label>
-                <h2>$ 69.000</h2>
-                <button>COMPRAR</button>
-            </div>
-            <div class="tarjetas">
-                <img src="imagenes/romper-el-circulo-.webp" alt="Romper el Circulo">
-                <label for="">Libro Romper el Circulo - Colleen hoover</label>
-                <h2>$ 69.000</h2>
-                <button>COMPRAR</button>
-            </div>
-            <div class="tarjetas">
-                <img src="imagenes/romper-el-circulo-.webp" alt="Romper el Circulo">
-                <label for="">Libro Romper el Circulo - Colleen hoover</label>
-                <h2>$ 69.000</h2>
-                <button>COMPRAR</button>
+       <section class="hero-recomendados" id="inicio"> 
+            <div class="hero">
+                <h1>Holo BookStore</h1>
+                <p>Tu lugar favorito para encontrar historias inolvidables</p>
+                <button onclick="scrollToRecommendations()">Ver más...</button>
             </div>
 
-        </div>
+            <div id="recomendaciones" class="recomendados">
+                <h2>Libros Recomendados</h2>
+                <div class="slider">
+                <button class="nav left" onclick="cambiarLibro(-1)">❮</button>
+                <img id="portadaLibro" src="libro1.jpg" alt="Libro recomendado">
+                <button class="nav right" onclick="cambiarLibro(1)">❯</button>
+                </div>
+                <p id="tituloLibro">La Sombra del Viento - Carlos Ruiz Zafón</p>
+            </div>
+        </section>
+        <section class="nosotros-visual" id="nosotros">
+  <div class="contenedor-nosotros">
+    <div class="imagen-nosotros">
+    </div>
+    <div class="texto-nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos lectores caóticos, antisociales funcionales con habilidades sociales limitadas… pero con un radar infalible para buenos libros.</p>
+      <p>No te vamos a juzgar si eliges libros solo por la portada (nos pasa), ni si lees los finales antes de empezar. Este sitio es para lectores de todos los moods: los que lloran con finales felices, los que aman los plot twists y los que solo quieren un chisme literario bien contado.</p>
+      <p>Aquí no vendemos solo libros. Vendemos obsesiones, traumas emocionales y excusas para cancelar planes sociales.</p>
+      <p>Si te gustan los spoilers, las historias intensas y el olor a páginas nuevas, bienvenidos No hacemos reseñas perfectas, hacemos confesiones lectoras.</p>
+        
+    </div>
+  </div>
+</section>
+
+        <section id="beneficios" class="beneficios">
+            <h2>¿Por qué elegirnos?</h2>
+            <ul>
+                <li>📚 Gran variedad de libros físicos y digitales</li>
+                <li>🚀 Envíos rápidos y seguros</li>
+                <li>💬 Recomendaciones personalizadas</li>
+                <li>🎁 Promociones semanales</li>
+            </ul>
        </section>
 
     </main>
@@ -112,7 +93,9 @@
             </div>
         </div>
     </aside>
-    <footer class="pie">
+    <footer class="pie" id="contacto">
+            <h2>Contáctanos</h2>
+            <p>📍 Dirección: Calle Ficticia 123, Ciudad Literaria</p>
        <p><strong>Contacto:</strong> contacto@mitienda.com | 📞 +57 302 652 5353</p>
             <p><strong>Horario:</strong> Lunes a Viernes, 8:00am - 6:00pm</p>
             <p>Síguenos en:
@@ -123,5 +106,6 @@
             <p>© 2025 Mi Tienda. Todos los derechos reservados.</p>
     </footer>
     <script src="Inicio.js"></script>
+    
 </body>
 </html>

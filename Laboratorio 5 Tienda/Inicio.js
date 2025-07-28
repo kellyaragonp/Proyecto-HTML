@@ -17,3 +17,26 @@ function iniciarScroll(containerId) {
 // Llama la función para cada bloque que tenga auto-scroll
 iniciarScroll('trivia-box');
 iniciarScroll('curiosidades-box');
+
+ const libros = [
+    {
+      titulo: "La Sombra del Viento - Carlos Ruiz Zafón",
+      imagen: "libro1.jpg"
+    },
+    {
+      titulo: "Orgullo y Prejuicio - Jane Austen",
+      imagen: "libro2.jpg"
+    },
+    {
+      titulo: "Cien Años de Soledad - Gabriel García Márquez",
+      imagen: "libro3.jpg"
+    },
+    {
+      titulo: "El Principito - Antoine de Saint-Exupéry",
+      imagen: "libro4.jpg"
+    }
+    ];
+    setInterval(() => {
+    cambiarLibro(1);
+  }, 5000);
+
